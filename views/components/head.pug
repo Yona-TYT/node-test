@@ -1,0 +1,32 @@
+- var css_url = ["resources/css/style.css", "resources/css/gallery-grid.css"]
+head
+	title=title
+	meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width")
+	meta(name="description", content=desc)
+
+	meta(name="keywords", content=desc)
+	meta(name="author", content=''+autor.name+' &amp; '+title+'')
+	meta(name="theme-color", content="#609FC7")
+
+	each val in lang
+		link(rel="alternate", hreflang=val.name, href=val.url)
+
+	link(rel="icon", href="resources/img/icon.png", type="image/x-icon")
+
+	each val in css_url
+		link(href=val, type="text/css", rel="StyleSheet", media="screen")
+
+	script(src='https://use.fontawesome.com/releases/v5.14.0/js/all.js')
+	script(src='https://use.fontawesome.com/releases/v5.14.0/js/v4-shims.js')
+	script(src='https://use.fontawesome.com/releases/v5.14.0/js/fontawesome.js')
+
+	meta(property="og:url", content=domain)
+	meta(property="og:title", content=motto)
+	meta(property="og:description", content=desc)
+	meta(property="og:site_name", content=title)
+	meta(property="og:image", content="resources/img/logo.png")
+	meta(name="twitter:card", content="summary_large_image")
+	meta(name="twitter:title", content=desc)
+	meta(name="twitter:description", content=desc)

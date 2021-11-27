@@ -1,0 +1,43 @@
+doctype 5
+html(lang="es")
+	link(href="resources/css/contact.css", type="text/css", rel="StyleSheet", media="screen")
+	include ./components/head.pug
+	link(href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css", type="text/css", rel="StyleSheet", media="screen")
+	body
+		include ./components/header.pug
+		- var all_img = 5
+		div(id="container", role="main")
+			div(class="smsc", style="background-image:url(resources/img/background.jpg)")
+			h1 Galería
+			div(class="block")
+				h2 Galería Fotográfica
+				div(class="container gallery-container")
+					div(class="tz-gallery")
+						div(class="row")
+							- for (var i=1; i<=all_img; i++)
+								div(class="col-sm-6 col-md-4")
+									a(class="lightbox", href="resources/img/gallery/"+i+".jpg")
+										img(src="resources/img/gallery/"+i+".jpg", alt="Imagen")
+				script(src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js')
+				script.
+					baguetteBox.run('.tz-gallery');
+
+			div(class="block")
+				h2 Medios de contacto.
+				ul
+					each val in contact
+						a(href=val.url, class="contact", title=val.title)
+							i(class=val.font)
+						span 
+						a(href=val.url, title=val.title)= val.inner 
+						span= " - "+val.text
+						br
+			div(class="block")
+				h2 Ubica nuestra oficina.
+				ul
+					p
+						span(class="contact")
+							i(class="fas fa-map-marker-alt")
+						span= address
+				iframe(class="maps", src="map.html")
+		include ./components/foot.pug

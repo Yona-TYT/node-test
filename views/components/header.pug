@@ -1,0 +1,28 @@
+div(id="header", role="banner")
+	span(class="social", role="menuitem")
+		- var nr = 0
+		each val in contact
+			if(nr++<1)
+				a(class="icon", href=val.url, title=val.title)
+					i(class=val.font)
+				a(class="mail", href=val.url, title=val.title)= val.inner
+	a(href="index.html", class="mobile home menu", title="Home")
+		span(class="image") Imagen
+		span(class="disable") links[0].name
+	label(for="mobile-menu", class="mobile menu", tabindex="1") Menu
+	a(href=links[1].url, class="mobile menu", tabindex="1")= links[1].name
+	input(id="mobile-menu", type="checkbox")
+	div(id="menu", role="menubar")
+		- var nr = 0
+		each val in links
+			if(nr++==0)
+				div(class="item desktop")
+					a(href=val.url, class="home", title="Inicio", role="menuitem")
+					a(href=val.url, role="menuitem")=val.name
+			else if(nr++==2)
+				div(class="item desktop small_mobile")
+					a(href=val.url, role="menuitem")=val.name
+			else
+				div(class="item")
+					a(href=val.url, role="menuitem")=val.name
+

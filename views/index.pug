@@ -1,0 +1,43 @@
+doctype 5
+html(lang="es")
+	link(href="resources/css/home.css", type="text/css", rel="StyleSheet", media="screen")
+	include ./components/head.pug
+	body
+		include ./components/header.pug
+		- var home_cont = [{id : "domicilio", title : "Domicilio", text : "Servicios a domicilio.", longtext : "Ofrecemos servicios de mantenimiento e instalación a domicilio.", url : "/"},  {id : "agua", title : "Agua", text : "Tratamiento de agua.", longtext : "Contamos con todo tipo de equipos para el tratamiento de agua potable.", url : "/"}, {id : "equipos", title : "Equipos", text : "Mantenimiento de equipos.", longtext : "Realizamos trabajos de mantenimientos e instalación para equipos hidráulicos y eléctricos.", url : "/"}]
+		div(id="container", role="main")
+			div(class="logo")
+				div(class="logo-bg")
+					img(alt="Logo", src="resources/img/logo.png", onerror='this.src="/images/logo.png"')
+			div(class="smsc", style="background-image:url(resources/img/background.jpg)")
+			div(id="download")
+				h1 Hidroingelec
+				p Servicios y asesorías Hidroingelec S.P.A. Somos una empresa dedicada a trabajos de ingeniería hidráulica y eléctrica con alcance en todo el “Estado/departamento/región”, también contamos con una amplia gama de  productos para la venta.
+			div(id="swiper")
+				iframe(border="none", src="swiper")
+			div(id="download")
+				- var nr = 1
+				each val in home_cont
+					if(nr++ & 1)
+						div(id=val.id, class="section")
+							div(class="half feature")
+								a(href=val.url)
+									img(class="sicon", alt="" src="resources/img/svg-"+(nr-1)+".svg")
+									h2= val.title
+										i(class="fas fa-chevron-right")
+									p(class="headline")= val.text
+									p= val.longtext
+							div(class="half")
+								img(alt="val.title", src="resources/img/svg-"+(nr-1)+".svg", onerror='this.src=""')
+					else
+						div(id=val.id, class="section")
+							div(class="half")
+								img(alt="val.title", src="resources/img/svg-"+(nr-1)+".svg", onerror='this.src=""')
+							div(class="half feature")
+								a(href=val.url)
+									img(class="sicon", alt="" src="resources/img/svg-"+(nr-1)+".svg")
+									h2= val.title
+										i(class="fas fa-chevron-right")
+									p(class="headline")= val.text
+									p= val.longtext
+		include ./components/foot.pug

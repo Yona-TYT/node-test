@@ -1,0 +1,40 @@
+doctype 5
+html(lang="es")
+	link(href="resources/css/service.css", type="text/css", rel="StyleSheet", media="screen")
+	include ./components/head.pug
+	body
+		include ./components/header.pug
+		div(id="container", role="main")
+			div(class="smsc", style="background-image:url(resources/img/background.jpg)")
+			h1 Servicios
+			- var nr = 1
+			each val in serv
+				h2(id=val.id)= val.title
+				div(class="block")
+					div(class="product")
+						p= val.text
+						div(class="info")
+							span Tipo:
+							span(class="important")= val.type
+					div(class="servimage")
+						img(alt="",src="resources/img/services/"+(nr++)+".jpg")
+
+			div(class="block")
+				h2 Medios de contacto.
+				ul
+					each val in contact
+						a(href=val.url, class="contact", title=val.title)
+							i(class=val.font)
+						span 
+						a(href=val.url, title=val.title)= val.inner 
+						span= " - "+val.text
+						br
+			div(class="block")
+				h2 Ubica nuestra oficina.
+				ul
+					p
+						span(class="contact")
+							i(class="fas fa-map-marker-alt")
+						span= address
+				iframe(class="maps", src="map.html")
+		include ./components/foot.pug

@@ -1,0 +1,44 @@
+- var copy_year = " ©2021 - 2021"
+div(id="footer")
+	div(class="center")
+		div(class="foot_left")
+			span(class="links")
+				- var nr = 1
+				each val in links
+					if (nr != 1)
+						a(href=val.url)= val.name
+					if (nr++ < links.length && nr > 2)
+						span 
+						span - 
+			p(class="copyright", dir="ltr")
+				- var nr = 1
+				each val in contact
+					i(class=val.font)
+					span 
+					span(class="by", dir="ltr") 
+						a(href=val.url, title=val.title)= val.inner
+
+					if (nr++ < contact.length)
+						span 
+						span | 
+			p(class="copyright", dir="ltr")= title + copy_year
+				span 
+				span | 
+				span(class="by", dir="ltr") por 
+					a(href=autor.url)= autor.name
+		div(class="foot_right", role="contentinfo")
+			div(class="language")
+				span(id="langLabel") Idioma:
+				label(for="language-menu", tabindex="0")= lang[0].inner
+				input(id="language-menu", type="checkbox")
+				div(class="languages", role="listbox", aria-labelledby="langLabel")
+					label(for="language-menu", tabindex="0", role="option")= lang[0].inner
+					each val in lang
+						a(href=val.url, role="option")= val.inner
+			span(class="social")
+				each val in social
+					a(class="icon facebook", href=val.url, title=val.title)
+						i(class=val.font)
+
+
+
