@@ -1,23 +1,25 @@
-
 {
-  "name": "node-example",
+  "name": "nodejsservice",
   "version": "1.0.0",
-  "description": "This example is so cool.",
+  "engines": {
+    "node": "7.9.0",
+    "npm": "4.2.0"
+  },
+  "description": "this is my fist nodejs service project",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
-  "author": "jane-doe",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.9.8"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvsivapr/NodejsHeroku.git"
   },
-  "engines": {
-    "node": "8.10.0"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mysql": "^2.14.1"
   }
 }
-
