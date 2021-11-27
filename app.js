@@ -52,10 +52,10 @@ var src_lang =	[
 			]
 
 var src_serv =	[
-					{ id : "bombas", title : "Bombas", text : "Mantenimiento correctivo y preventivo en salas de bombas.", type : "Mantenimiento"},
-					{ id : "estanques", title : "Estanques", text : "Venta e instalación de estanques de presión.", type : "instalación"},
-					{ id : "piscinas", title : "Piscinas", text : "Limpieza y mantenimiento a piscinas.", type : "Mantenimiento"},
-					{ id : "tableros", title : "Tableros", text : "Diseño y control en tableros de fuerza y control.", type : "Diseño"}
+					{ sud : "servicios", id : "bombas", title : "Bombas", text : "Mantenimiento correctivo y preventivo en salas de bombas.", type : "Mantenimiento"},
+					{ sud : "servicios", id : "estanques", title : "Estanques", text : "Venta e instalación de estanques de presión.", type : "instalación"},
+					{ sud : "servicios", id : "piscinas", title : "Piscinas", text : "Limpieza y mantenimiento a piscinas.", type : "Mantenimiento"},
+					{ sud : "servicios", id : "tableros", title : "Tableros", text : "Diseño y control en tableros de fuerza y control.", type : "Diseño"}
 				]
 //----------------------------------------------------------------------------------
 
