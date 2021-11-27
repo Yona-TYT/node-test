@@ -115,6 +115,8 @@ app.get('/', function(req, res){
 */
 
 app.use(subdomain('api', router));
+
+// start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
 
