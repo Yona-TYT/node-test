@@ -6,10 +6,10 @@
     "npm": "4.2.0"
   },
   "description": "this is my fist nodejs service project",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
