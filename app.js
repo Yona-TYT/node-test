@@ -1,4 +1,4 @@
-const http = require("http");
+
 //const fs = require('fs').promises;
 
 //const host = 'localhost';
@@ -7,7 +7,7 @@ const port = 8000;
 //const fs = require("fs"), NOMBRE_ARCHIVO = "index.html";
 
 // Se cargan los modulos necesarios.
-var subdomain = require('express-subdomain');
+//var subdomain = require('express-subdomain');
 var express = require('express');
 //var path = require('path');
 
@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/views'));
 app.set('view engine', 'pug');
 
 // Para los Subdominios
-var router = express.Router();
+//var router = express.Router();
 
 //Variables para la pagina ---------------------------------------------------------
 var src_dom = "https://www.hidroingelec.cl";
@@ -114,7 +114,7 @@ app.get('/', function(req, res){
   });
 */
 
-app.use(subdomain('api', router));
+//app.use(subdomain('api', router));
 
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
