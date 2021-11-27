@@ -28,7 +28,7 @@ var src_dom = "https://www.hidroingelec.cl";
 var src_desc = "Servicios de mantenimiento e instalación de equipos hidráulicos.";
 var src_motto = "Ingeniería hidráulica y eléctrica.";
 var src_title = "Hidroingelec";
-var src_address = "Av. tal con calle ta, Ciudad Ojeda etd. Zulia."
+var src_address = "Calle fray Juan de ibarguen # 249 diagonal al hogar Alemán kolbe Alto comuna Osorno Los Lagos"
 
 var src_contact =[
 				{font: "fa fa-envelope-o", inner : "correo@mail.com", url : "mailto:correo@mail.com", title : "Correo Electronico", text : "Dirección de correo electrónico."},

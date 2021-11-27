@@ -1,8 +1,9 @@
  // JavaScript source code
 function inicializar() {
+	var pos = {x : -40.5654982563697, y : -73.11012964548388}
     //Opciones del mapa
     var OpcionesMapa = {
-        center: new google.maps.LatLng(10.199928499167672, -71.31148338317873),
+        center: new google.maps.LatLng(pos.x, pos.y),
         mapTypeId: google.maps.MapTypeId.ROADMAP, //ROADMAP  SATELLITE HYBRID TERRAIN
         zoom: 18
     };
@@ -13,7 +14,7 @@ function inicializar() {
  
     //Añadimos el marcador
     var Marcador = new google.maps.Marker({
-                    position: new google.maps.LatLng(10.199928499167672, -71.31148338317873),
+                    position: new google.maps.LatLng(pos.x, pos.y),
                     map: miMapa,
                     title:"Mi Ubicacion"
                 });
