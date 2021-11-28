@@ -2,14 +2,14 @@
 
 :root {
 	--color-text: #444444;
-	--color-text-link: rgba(225, 225, 225, 0.80);
+	--color-text-link: rgba(225, 225, 225, 0.90);
 
 	--color-text-menu: #d6d6d6;
 
-	--color-header: rgba(31, 118, 233, 0.65);
+	--color-header: rgba(255, 99, 41, 0.85);
 	--color-menu: rgba(31, 118, 233, 0.75);
 	--color-menu-hover: #ffffff;
-	--color-footer: rgba(31, 118, 233, 0.85);
+	--color-footer: #ff6329;
 	--color-text-footer: #fff;
 	--color-footer-bord: #dfdbaf;
 	--color-footer-link: rgba(225, 225, 225, 0.85);
@@ -17,10 +17,18 @@
 	--color-container: #fff;
 	--color-backg: #eeeeee;
 
-	--color-line: #dfdbaf;
+	--color-line: rgba(255, 112, 73, 0.75);
 
-	--color-text-h: rgba(31, 118, 233, 0.75);
-	--color-icon: rgba(31, 118, 233, 0.75);
+	--color-text-h: #e57e5a;
+	--color-icon: rgba(255, 112, 73, 0.75);
+}
+
+.infotx {
+	margin:20px 10px;
+	padding: 35px;
+	background-image: linear-gradient(to top, #e3fafe 0%, #fff 75%, #a6effe 100%);
+	border-radius:10px;
+	border:1px solid var(--color-line);
 }
 
 .icon {
@@ -52,7 +60,6 @@
 html {
 	background: var(--color-backg);
 	color: var(--color-text);
-	line-height: 1.5;
 }
 body {
 	font-family: -apple-system, "Segoe UI", "Open Sans", Roboto, "DejaVu Sans Condensed", Helvetica, "Geeza Pro", Arial, sans-serif;
@@ -155,11 +162,15 @@ html[dir="rtl"] #menu .item {
 	width: 90%;
 }
 
+#container p{
+	color: #656666;
+}
+
 #container a{
-	color: rgba(31, 118, 233, 0.75);
+	color: rgba(255, 112, 73, 0.75);
 }
 #container a:hover{
-	color: rgba(31, 118, 233, 1);
+	color: rgba(255, 112, 73, 0.95);
 }
 /* Footer */
 #footer input {

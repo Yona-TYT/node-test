@@ -10,12 +10,12 @@ h2{
 }
 
 a {
-	color: #fff;
+	color: #007aff;
 	text-decoration: none;
 	}
 
 .title {
-	background: rgba(31, 118, 233, 0.35);
+	background-image: linear-gradient(to top, rgba(168, 239, 240, 0.35) 5%, rgba(168, 239, 240, 0.85) 75%, rgba(168, 239, 240, 0.8) 100%);
 
 	position: absolute;
     top: 5%;

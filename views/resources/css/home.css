@@ -1,9 +1,10 @@
 :root {
-	--color-line-sec: #dfdbaf;
+	--color-line-sec: #e57e5a;
 	--color-text_link: #4078c0;
 }
 
 .infotx h1 {
+	color: #ff6329;
 	text-align: center;
 }
 
@@ -13,17 +14,16 @@
 	 font-size:17pt;
 	 margin:20px 10px;
 	 color:var(--color-text-h);
-	 border-bottom:1px solid #ccc
+	 border-bottom:1px solid var(--color-line);
 }
 p {
 	text-align: center;
 }
-
-.infotx {
-	margin:20px 10px;
+.section {
+	background-image: linear-gradient(to top, #e3fafe 0%, #fff 75%, #a6effe 100%);
 	padding: 35px;
-	background-image: linear-gradient(to top, #f1d1bc 0%, #eceeef 75%, #f1d1bc 100%);
 	border-radius:10px;
+	margin:20px 10px;
 }	
 .logo{
 	display:block;
@@ -107,7 +107,7 @@ p {
 	width:50%
 }
 .half img:not(.sicon){
-	background:rgba(31, 118, 233, 0.30);
+	background:rgba(255, 99, 41, 0.20);
 	border:1px solid #c0cbd9;
 	border-radius:15px;
 	padding:35px;

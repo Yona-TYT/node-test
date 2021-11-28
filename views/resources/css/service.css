@@ -7,7 +7,7 @@ h2{
 	font-size:15pt;
 	margin:40px 30px;
 	color: var(--color-text-h);
-	border-bottom:1px solid #ccc
+	border-bottom:1px solid var(--color-line);
 }
 .block{
 	margin:0 10%
@@ -79,7 +79,7 @@ html[dir=rtl] .product{
 .info{
 	display:inline-block;
 	border-bottom:1px solid currentColor;
-	color:#005c9e
+	color:var(--color-text-h);
 }
 .info .important{
 	font-weight:700;
