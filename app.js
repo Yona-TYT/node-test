@@ -28,7 +28,10 @@ var src_dom = "https://www.hidroingelec.cl";
 var src_desc = "Servicios de mantenimiento e instalación de equipos hidráulicos.";
 var src_motto = "Ingeniería hidráulica y eléctrica.";
 var src_title = "Hidroingelec";
-var src_address = "Calle fray Juan de ibarguen # 249 diagonal al hogar Alemán kolbe Alto comuna Osorno Los Lagos"
+var src_info = "Servicios y asesorías Hidroingelec S.P.A. Somos una empresa dedicada a trabajos de ingeniería hidráulica y eléctrica con alcance en todo el “Estado/departamento/región”, también contamos con una amplia gama de  productos para la venta.";
+var src_mision = "Ser reconocidos por los valores y profesionalidad anticipando el futuro del área hídrica, a través de tecnología de vanguardia y el desarrollo del personal.";
+var src_vision = "Ser líderes en asesoría y prestación de servicios en la captación, y abastecimiento de agua, proporcionar servicios integrales, soluciones flexibles a través de innovación tecnológica y gente comprometida, para así superar las expectativas de nuestros clientes.";
+var src_address = "Calle fray Juan de ibarguen # 249 diagonal al hogar Alemán kolbe Alto comuna Osorno Los Lagos";
 
 var src_contact =[
 				{font: "fa fa-envelope-o", inner : "correo@mail.com", url : "mailto:correo@mail.com", title : "Correo Electronico", text : "Dirección de correo electrónico."},
@@ -68,7 +71,8 @@ app.get('/', function (req, res) {
 		{
 			domain : src_dom, desc : src_desc, motto : src_motto, title : src_title,
 			contact : src_contact, links : src_links, autor : src_autor, lang : src_lang,
-			social : src_social, address : src_address, address : src_address
+			social : src_social, address : src_address, address : src_address, info : src_info,
+			mision : src_mision, vision : src_vision
 		}
 	); 
 });
