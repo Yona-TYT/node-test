@@ -7,7 +7,7 @@
 	--color-text-menu: #d6d6d6;
 
 	--color-header: rgba(255, 99, 41, 0.85);
-	--color-menu: rgba(31, 118, 233, 0.75);
+	--color-menu: rgba(255, 99, 41, 0.75);
 	--color-menu-hover: #ffffff;
 	--color-footer: #ff6329;
 	--color-text-footer: #fff;
@@ -62,7 +62,7 @@
 .social a{
 	float: left;
 	margin: 4px 5px 2px;
-	padding: 0;
+	padding: 5px;
 }
 html {
 background: rgba(255,143,0,0.1243417195979955) ; 

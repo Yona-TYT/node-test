@@ -14,7 +14,6 @@
 	 text-transform:uppercase;
 	 font-size: var(--siz-h2);
 	 margin:20px 10px;
-	 color:var(--color-text-h);
 	 border-bottom:1px solid var(--color-line);
 }
 p {
@@ -152,6 +151,14 @@ p {
 	}
 }
 @media all and (max-width:810px){
+	.logo img{
+		top:-20px;
+		width:35%;
+		min-width:80px;
+		max-height:160px;
+		height:auto
+	}
+
 	.half h2{
 		margin-top:5px;
 		font-size: 15pt;
@@ -173,6 +180,14 @@ p {
 	}
 }
 @media all and (max-width:605px){
+
+	.logo img{
+		top:-10px;
+		width:35%;
+		min-width:80px;
+		max-height:140px;
+		height:auto
+	}
 
 	.feature{
 		color:inherit;
