@@ -14,7 +14,7 @@
 	--color-footer-bord: #dfdbaf;
 	--color-footer-link: rgba(225, 225, 225, 0.85);
 
-	--color-container: #fff;
+	--color-container: rgba(0,101,255,0.2851260333234856);
 	--color-backg: #eeeeee;
 
 	--color-line: rgba(255, 112, 73, 0.75);
@@ -65,7 +65,7 @@
 	padding: 0;
 }
 html {
-	background-image: linear-gradient(to top, #f7b733 0%, #fff 75%, #f7b733 100%);
+background: rgba(255,143,0,0.1243417195979955) ; 
 	color: var(--color-text);
 }
 body {
