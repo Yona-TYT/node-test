@@ -20,7 +20,7 @@ p {
 	text-align: center;
 }
 .section {
-	background-image: linear-gradient(to top, #f7b733 0%, #fff 75%, #f7b733 100%);
+	background-image: url(../img/back-icon.jpg);
 	padding: 10px;
 	border-radius:10px;
 	margin:20px 10px;

@@ -14,15 +14,16 @@
 	--color-footer-bord: #dfdbaf;
 	--color-footer-link: rgba(225, 225, 225, 0.85);
 
-	--color-container: rgba(0,101,255,0.2851260333234856);
-	--color-backg: #eeeeee;
+	--color-container: rgba(255, 112, 30, 0.75);
+	--color-backg: #fff;
 
 	--color-line: rgba(255, 112, 73, 0.75);
 
 	--color-conta-a: rgba(0, 122, 255, 1);
-	--color-conta-a-hov: rgba(0, 122, 255, 0.75);
-	--color-text-h: #007aff;
-	--color-text-p: rgba(0, 0, 0, .50);
+	--color-conta-a-hov: rgba(0, 122, 255, 0.85);
+	--color-text-h: rgba(250, 250, 250, 0.80);
+	--color-text-h1: rgba(10, 50, 200, 0.80);
+	--color-text-p: #d95431;
 	--color-icon: #007aff;
 
 	--siz-p: 11pt;
@@ -32,12 +33,15 @@
 .infotx {
 	margin:20px 10px;
 	padding: 10px;
-	background-image: linear-gradient(to top, #f7b733 0%, #fff 75%, #f7b733 100%);
+	background-image: url(../img/back-icon.jpg);
 	border-radius:10px;
 	border:1px solid var(--color-line);
-	color: #d95431;
+	color: #000;
 }
 
+.infotx h2{
+	color: var(--color-conta-a);
+}
 .icon {
 	color: rgba(225, 225, 225, 0.85);
 	display: inline-block;
@@ -65,7 +69,7 @@
 	padding: 5px;
 }
 html {
-background: rgba(255,143,0,0.1243417195979955) ; 
+	background: var(--color-backg);
 	color: var(--color-text);
 }
 body {
@@ -79,12 +83,14 @@ h1 {
 	text-transform: uppercase;
 	font-size: 20pt;
 	margin: 0 0 10px 0;
+	color: var(--color-text-h1);
 }
  h2 {
 	 font-size: var(--siz-h2);
 }
 p{
 	font-size: var(--siz-p);
+	text-shadow: 2px 2px 2px rgba(50, 0, 0, 0.20);;
 }
 a {
 	text-decoration: none;
@@ -176,9 +182,6 @@ html[dir="rtl"] #menu .item {
 	width: 90%;
 }
 
-#container p{
-	color: var(--color-text-p);
-}
 
 #container a{
 	color: var(--color-conta-a);

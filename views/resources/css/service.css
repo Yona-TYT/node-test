@@ -9,6 +9,15 @@ h2{
 	color: var(--color-text-h);
 	border-bottom:1px solid var(--color-line);
 }
+
+.infoservic {
+	margin:20px 10px;
+	padding: 10px;
+	background-image: url(../img/back-serv.jpeg);
+	border-radius:10px;
+	border:1px solid var(--color-line);
+	color: #fff;
+}
 .block{
 	margin:0 10%
 }
@@ -63,6 +72,7 @@ h2{
 	object-fit: cover;
 }
 .product{
+	background: rgba(0,0,0,0.1543417195979955) ; 
 	display:inline-block;
 	vertical-align:top;
 	box-sizing:border-box;
