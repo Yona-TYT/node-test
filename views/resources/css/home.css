@@ -1,7 +1,3 @@
-:root {
-	--color-line-sec: #e57e5a;
-	--color-text_link: #4078c0;
-}
 
 .infotx h1 {
 	color: #2d74b2;
@@ -49,7 +45,9 @@ p {
 	height:0
 }
 .headline{
-	color:var(--color-text_link);
+	 font-size: var(--siz-h2);
+	text-shadow: 3px 3px 3px #f1beac;
+	color:var(--color-text-link);
 	margin-top:.5em
 }
 .feature a{
@@ -94,7 +92,6 @@ p {
 	margin-right:25px
 }
 .half p{
-	font-size: var(--siz-p);
 	margin-left:25px;
 	margin-right:25px
 }

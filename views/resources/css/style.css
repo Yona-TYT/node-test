@@ -2,7 +2,7 @@
 
 :root {
 	--color-text: #444444;
-	--color-text-link: rgba(225, 225, 225, 0.90);
+	--color-text-link: #c50000;
 
 	--color-text-menu: #d6d6d6;
 
@@ -19,8 +19,8 @@
 
 	--color-line: rgba(255, 112, 73, 0.75);
 
-	--color-conta-a: rgba(0, 122, 255, 1);
-	--color-conta-a-hov: rgba(0, 122, 255, 0.85);
+	--color-conta-a: #000;
+	--color-conta-a-hov: #007aff;
 	--color-text-h: rgba(250, 250, 250, 0.80);
 	--color-text-h1: rgba(10, 50, 200, 0.80);
 	--color-text-p: #d95431;
@@ -40,7 +40,7 @@
 }
 
 .infotx h2{
-	color: var(--color-conta-a);
+	color: #c50000;
 }
 .icon {
 	color: rgba(225, 225, 225, 0.85);
@@ -183,7 +183,7 @@ html[dir="rtl"] #menu .item {
 }
 
 
-#container a{
+#container a:not(.contact){
 	color: var(--color-conta-a);
 }
 #container a:hover{
