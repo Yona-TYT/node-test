@@ -1,7 +1,7 @@
 
 .infotx h1 {
 	color: #2d74b2;
-  text-shadow: 3px 3px 3px #f1beac;
+ 	text-shadow: 3px 3px 3px #f1beac;
 	text-align: center;
 }
 
@@ -93,7 +93,7 @@ p {
 }
 .half p{
 	margin-left:25px;
-	margin-right:25px
+	margin-right:25px;
 }
 
 .half{
@@ -104,7 +104,7 @@ p {
 	width:50%
 }
 .half img:not(.sicon){
-	background:rgba(31, 118, 233, 0.30);
+	background: var(--color-layer-a);
 	border:1px solid var(--color-line);
 	border-radius:15px;
 	padding:35px;
@@ -118,7 +118,7 @@ p {
 
 .sicon{
 	display: none;
-	background:rgba(31, 118, 233, 0.30);
+	background: var(--color-layer-a);
 	border:1px solid var(--color-line);
 	border-radius:5px;
 	padding:15px;
@@ -132,6 +132,30 @@ p {
 	width:30%;
 }
 
+#sectlist {
+	background: rgba(0,0,0,0.0543417195979955) ; 
+	padding:15px;
+	border:1px solid var(--color-line);
+	border-radius:15px;
+
+}
+
+#sectlist p{
+	text-align:left;
+	margin: 15px;
+	color: #000
+}
+#sectlist p:hover{
+ color:  var(--color-conta-a-hov);
+}
+#sectlist span{
+	width:15px;
+	padding:3px;
+	border-radius:5px;
+	color:#fff;
+	background: #07fe46;
+	border:1px solid #fff;
+}
 
 .section:nth-child(odd) {
 	border-bottom:2px solid var(--color-line-sec);
@@ -167,7 +191,7 @@ p {
 	}
 	.half p{
 		font-size: 12pt;
-		line-height: 20px;
+		line-height: px;
 		margin-left:25px;
 		margin-right:25px
 	}

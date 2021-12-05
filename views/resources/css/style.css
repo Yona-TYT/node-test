@@ -1,7 +1,7 @@
 /* Main style */
 
 :root {
-	--color-text: #444444;
+	--color-text: #000;
 	--color-text-link: #c50000;
 
 	--color-text-menu: #d6d6d6;
@@ -15,7 +15,7 @@
 	--color-footer-link: rgba(225, 225, 225, 0.85);
 
 	--color-container: rgba(255, 112, 30, 0.75);
-	--color-backg: #fff;
+	--color-backg: #f5f2f0;
 
 	--color-line: rgba(255, 112, 73, 0.75);
 
@@ -23,11 +23,18 @@
 	--color-conta-a-hov: #007aff;
 	--color-text-h: rgba(250, 250, 250, 0.80);
 	--color-text-h1: rgba(10, 50, 200, 0.80);
+	--color-text-h2: #c50000;
 	--color-text-p: #d95431;
 	--color-icon: #007aff;
 
 	--siz-p: 11pt;
 	--siz-h2: 14pt;
+
+	--color-layer-a : rgba(31, 118, 233, 0.30);
+}
+
+.style_hidden {
+	display: none;
 }
 
 .infotx {
@@ -40,7 +47,7 @@
 }
 
 .infotx h2{
-	color: #c50000;
+	color: var(--color-text-h2);
 }
 .icon {
 	color: rgba(225, 225, 225, 0.85);
@@ -109,6 +116,21 @@ iframe {
 	height: 420px;
 	border: 2px solid var(--color-line);
 	border-radius:10px;
+}
+
+details summary {
+    font-weight: 400; /* peso de la tipografía cuando  no está desplegado */
+    list-style: none; /* ocultamos la flecha */
+    cursor: pointer; /* cambia el cursor del puntero */
+}
+
+
+details summary:hover {
+    color:  var(--color-conta-a-hov);
+}
+
+details[open] summary {
+    font-weight: 600; /* peso de la tipografía cuando está desplegado */
 }
 
 /* Header */

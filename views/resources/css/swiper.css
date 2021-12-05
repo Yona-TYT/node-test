@@ -1,7 +1,4 @@
-:root {
-	--color-line-sec: #dfdbaf;
-	--color-text_link: #4078c0;
-}
+
 
 h2{
 	text-transform:uppercase;
@@ -10,12 +7,13 @@ h2{
 }
 
 a {
-	color: #007aff;
+	color: #c50000;
+ 	text-shadow: 3px 3px 3px #f1beac;
 	text-decoration: none;
-	}
+}
 
 .title {
-	background-image: linear-gradient(to top, rgba(168, 239, 240, 0.35) 5%, rgba(168, 239, 240, 0.85) 75%, rgba(168, 239, 240, 0.8) 100%);
+	background:linear-gradient(rgba(219,226,231,.8),rgba(219,226,231,.35));
 
 	position: absolute;
     top: 5%;

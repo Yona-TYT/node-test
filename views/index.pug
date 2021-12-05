@@ -4,7 +4,36 @@ html(lang="es")
 	include ./components/head.pug
 	body
 		include ./components/header.pug
-		- var home_cont = [{id : "domicilio", title : "Domicilio", text : "Servicios a domicilio.", longtext : "Ofrecemos servicios de mantenimiento e instalación a domicilio.", url : "/"},  {id : "agua", title : "Agua", text : "Tratamiento de agua.", longtext : "Contamos con todo tipo de equipos para el tratamiento de agua potable.", url : "/"}, {id : "equipos", title : "Equipos", text : "Mantenimiento de equipos.", longtext : "Realizamos trabajos de mantenimientos e instalación para equipos hidráulicos y eléctricos.", url : "/"}, {id : "plomeria", title : "Plomeria", text : "Mantenimiento y  reparación.", longtext : "Reparación y mantenimiento en  sistemas de tuberías para el subministro de agua.", url : "/"}, {id : "automatizacion", title : "Automatización", text : "Automatización y control.", longtext : "Diseñamos sistemas de control y automatización para motores de bombeo y sistemas de riego.", url : "/"}]
+
+		- var home_cont = [{id : "lugar", title : "Visitamos", text : "Llegamos hasta donde estas.", longtext : "Ofrecemos servicios de mantenimiento e instalación en terreno.", url : "/"},  {id : "agua", title : "Agua", text : "Tratamiento y Distribución de agua.", longtext : "Contamos con todo tipo de equipos para el tratamiento o Distribución de agua.", url : "/"}, {id : "equipos", title : "Equipos", text : "Mantenimiento de equipos.", longtext : "Realizamos trabajos de mantenimientos e instalación para equipos hidráulicos y eléctricos.", url : "/"}, {id : "mantenimiento", title : "Mantenimiento", text : "Mantenimiento y  reparación.", longtext : "Reparación y mantenimiento en  sistemas de tuberías, estanques de agua, piscinas, etc.", url : "/"}, {id : "automatizacion", title : "Eléctrico", text : "Automatización y control.", longtext : "Diseñamos sistemas de control y automatización para motores de bombeo y sistemas de riego.", url : "/"}]
+
+		script.
+			function open_list(nr) {
+				var dat = document.getElementById("data"+nr);
+				if(!dat.open) {
+						//console.log(""+dat.open+"");
+					var elm_a = document.getElementById("icon"+nr);
+					elm_a.setAttribute("class","style_hidden");
+
+					var elm_b = document.getElementById("sicon"+nr);
+					//elm_b.setAttribute("class","style_hidden");
+
+					var elm_c = document.getElementById("infotx"+nr);
+					elm_c.style.width = "100%";
+				}
+				else {
+					var elm_a = document.getElementById("icon"+nr);
+					elm_a.setAttribute("class","half");
+
+					var elm_b = document.getElementById("sicon"+nr);
+					//elm_b.setAttribute("class","sicon");
+
+					var elm_c = document.getElementById("infotx"+nr);
+					elm_c.style.width = "50%";
+				}
+			}
+
+
 		div(id="container", role="main")
 			div(class="logo")
 				div(class="logo-bg")
@@ -24,24 +53,46 @@ html(lang="es")
 				each val in home_cont
 					if(nr++ & 1)
 						div(id=val.id, class="section")
-							div(class="half feature")
-								a(href=val.url)
-									img(class="sicon", alt="" src="resources/img/svg-"+(nr-1)+".svg")
-									h2= val.title
-										i(class="fas fa-chevron-right")
-									p(class="headline")= val.text
-									p= val.longtext
-							div(class="half")
+							div(id="infotx"+nr,class="half feature")
+								details(id="data"+nr)
+									summary(onclick="open_list("+nr+");")
+										img(id="sicon"+nr, class="sicon", alt="" src="resources/img/svg-"+(nr-1)+".svg")
+										h2= val.title
+											i(class="fas fa-chevron-right")
+										p(class="headline")= val.text
+										p= val.longtext
+									-var list = list_elem[nr-2]
+									div(id="sectlist")
+										each val in list
+											ul(class="fa-ul")
+												li
+													span(class="fa-li")
+														i(class="fas fa-check")
+													a(href=links[2].url+"#"+val.id, title=val.id)
+														p=val.text
+
+							div(id="icon"+nr, class="half")
 								img(alt="val.title", src="resources/img/svg-"+(nr-1)+".svg", onerror='this.src=""')
+
 					else
 						div(id=val.id, class="section")
-							div(class="half")
+							div(id="icon"+nr, class="half")
 								img(alt="val.title", src="resources/img/svg-"+(nr-1)+".svg", onerror='this.src=""')
-							div(class="half feature")
-								a(href=val.url)
-									img(class="sicon", alt="" src="resources/img/svg-"+(nr-1)+".svg")
-									h2= val.title
-										i(class="fas fa-chevron-right")
-									p(class="headline")= val.text
-									p= val.longtext
+							div(id="infotx"+nr,class="half feature")
+								details(id="data"+nr)
+									summary(onclick="open_list("+nr+");")
+										img(class="sicon", alt="" src="resources/img/svg-"+(nr-1)+".svg")
+										h2= val.title
+											i(class="fas fa-chevron-right")
+										p(class="headline")= val.text
+										p= val.longtext
+									-var list = list_elem[nr-2]
+									div(id="sectlist")
+										each val in list
+											ul(class="fa-ul")
+												li
+													span(class="fa-li")
+														i(class="fas fa-check")
+													a(href=links[2].url+"#"+val.id, title=val.id)
+														p=val.text
 		include ./components/foot.pug
