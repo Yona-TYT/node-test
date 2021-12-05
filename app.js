@@ -65,32 +65,32 @@ var src_lang =	[
 var cat_list = {vis : "visita", agu : "agua", equ : "equipos", man : "mantenimiento", ele : "electrico"};
 var all_serv =	[
 					{
-					  swiper : true, category : cat_list.equ, id : "bombas", title : "Bombas",
+					  swiper : true, category : cat_list.equ, id : "bombas", title : "Bombas", img : 1,
 					  text : "Mantenimiento correctivo y preventivo en salas de bombas.", type : "Mantenimiento"
 					},
 					{ 
-					  swiper : true, category : cat_list.agu, id : "estanques", title : "Estanques", 
+					  swiper : true, category : cat_list.agu, id : "estanques", title : "Estanques", img : 2,
 				 	  text : "Venta e instalación de estanques de presión.", type : "instalación"
 					},
 					{ 
-					  swiper : true, category : cat_list.man, id : "piscinas", title : "Piscinas",
+					  swiper : true, category : cat_list.man, id : "piscinas", title : "Piscinas",img : 3,
 					  text : "Limpieza y mantenimiento a piscinas.", type : "Mantenimiento"
 					},
 					{ 
-					  swiper : true, category : cat_list.ele, id : "tableros", title : "Tableros",
+					  swiper : true, category : cat_list.ele, id : "tableros", title : "Tableros",img : 4,
 					  text : "Diseño y control en tableros de fuerza y control.", type : "Diseño"
 					},
 					{
-					  swiper : true, category : cat_list.agu, id : "plantas", title : "Plantas",
+					  swiper : true, category : cat_list.agu, id : "plantas", title : "Plantas",img : 5,
 					  text : "Construcción de plantas de tratamiento.", type : "Diseño"
 					},
 					{
-					  swiper : true, category : cat_list.vis, id : "terreno", title : "Técnicos",
+					  swiper : true, category : cat_list.vis, id : "terreno", title : "Técnicos",img : 6,
 					  text : "Servicio Técnico en terreno.", type : "General"
 					}
 				];
 
-var src_serv = [];
+var src_swiper = [];
 
 //Servicios por categoria
 var elm_siz = 5; //cat_list.length;
@@ -102,13 +102,12 @@ for(var j = 0; j<elm_siz;j++){
 	//console.log(""+j);
 }
 
-
 //Se crea la lista para los servicios en swiper y las categorias añ inicio
 all_serv.forEach(function(serv) {
 	if(serv.swiper) {
-		src_serv.push(
+		src_swiper.push(
 						{ 
-							id : serv.id, title : serv.title, text : serv.text, type : serv.type
+							id : serv.id, title : serv.title, img : serv.img, text : serv.text, type : serv.type
 						}
 					);
 	}
@@ -136,19 +135,6 @@ all_serv.forEach(function(serv) {
 });
 //----------------------------------------------------------------------------------
 
-// PAgina de inicio -----------------------------------------------------------------
-var elm_a = ["yonatanss","Igggggggg"];
-var elm_b = ["yonatanss","Igggggggg"];
-var elm_c = ["yonatanss","Igggggggg"];
-var elm_d = ["yonatanss","Igggggggg"];
-var elm_e = ["yonatanss","Igggggggg"];
-var elm_f = ["yonatanss","Igggggggg"];
-
-// -----------------------------------------------------------------------------------
-
-
-
-
 app.get('/', function (req, res) {
 	res.render('index', 
 		{
@@ -163,7 +149,7 @@ app.get('/', function (req, res) {
 app.get('/swiper', function (req, res) {
 	res.render('swiper', 
 		{
-			serv : src_serv, links : src_links
+			serv : src_swiper, links : src_links
 		}
 	); 
 });
@@ -183,7 +169,7 @@ app.get('/servicios', function (req, res) {
 		{
 			domain : src_dom, desc : src_desc, motto : src_motto, title : src_title,
 			contact : src_contact, links : src_links, autor : src_autor, lang : src_lang,
-			social : src_social, address : src_address, serv : src_serv
+			social : src_social, address : src_address, serv : all_serv
 		}
 	); 
 });
