@@ -134,7 +134,7 @@ p {
 
 #sectlist {
 	background: rgba(0,0,0,0.0543417195979955) ; 
-	padding:15px;
+	padding:1%;
 	border:1px solid var(--color-line);
 	border-radius:15px;
 
@@ -142,7 +142,6 @@ p {
 
 #sectlist p{
 	text-align:left;
-	margin: 15px;
 	color: #000
 }
 #sectlist p:hover{
@@ -150,7 +149,7 @@ p {
 }
 #sectlist span{
 	width:15px;
-	padding:3px;
+	padding:0.2%;
 	border-radius:5px;
 	color:#fff;
 	background: #07fe46;
@@ -190,10 +189,12 @@ p {
 		margin-right:25px
 	}
 	.half p{
-		font-size: 12pt;
-		line-height: px;
+		font-size: 10pt;
 		margin-left:25px;
 		margin-right:25px
+	}
+	#sectlist span{
+		font-size: 10pt;
 	}
 
 	.smsc{
@@ -220,6 +221,14 @@ p {
 	.half{
 		width:100%;
 		display:inline
+	}
+	.half p{
+		font-size: 9pt;
+		margin-left:10px;
+		margin-right:10px
+	}
+	#sectlist span{
+		font-size: 10pt;
 	}
 	.half img:not(.sicon){
 		display: none;
