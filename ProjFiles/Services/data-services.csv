@@ -1,0 +1,7 @@
+id,title,text,category,type,img,swiper
+bombas,Bombas,Mantenimiento correctivo y preventivo en salas de bombas.,equipos,Mantenimiento,1,1
+estanques,Estanques,Venta e instalación de estanques de presión.,agua,instalación,2,1
+piscinas,Piscinas,Limpieza y mantenimiento a piscinas.,mantenimiento,Mantenimiento,3,1
+tableros,Tableros,Diseño y control en tableros de fuerza y control.,electrico,Diseño,4,1
+plantas,Plantas,Construcción de plantas de tratamiento.,agua,Diseño,5,1
+terreno,Técnicos,Servicio Técnico en terreno.,visita,General,6,1
