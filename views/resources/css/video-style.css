@@ -59,16 +59,65 @@ padding: 10px;
 
 
 }
-.restaurar {
-	clear: both;
-}
+
 
 video {
 	width: 400px;
 	height: 250px;
-  display: inline;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+	display: inline;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 }
+
+.restaurar {
+	clear: both;
+}
+
+
+
+/* For displays smaller than 935px we start showing some mobile styling */
+@media all and (max-width:935px){
+
+	.video-containerr {
+		width: 400px;
+		margin-left: 2%;
+	}
+
+	video {
+		width: 400px;
+		height: 250px;
+
+	}
+}
+@media all and (max-width:890px){
+
+	.video-containerr {
+		width: 220px;
+		margin-left: 2%;
+	}
+
+	video {
+		width: 220px;
+		height: 200px;
+
+	}
+}
+@media all and (max-width:460px){
+
+	.video-containerr {
+		width: 160px;
+		margin-left: 2%;
+	}
+
+	video {
+		width: 160px;
+		height: 120px;
+
+	}
+
+}
+
+
+
 
 .container-box {
 overflow: hidden;
