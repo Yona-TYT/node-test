@@ -30,7 +30,8 @@ module.exports =
 					{name : "Inicio", url : "/"}, 
 					{name : "Contacto", url : "contacto"},
 					{name : "Servicios", url : "servicios"},
-					{name : "Galeria", url : "galeria"}
+					{name : "Galeria", url : "galeria"},
+					{name : "Vídeos", url : "videos"}
 				];
 	var src_autor = {name : "Yona-TYT", url : "https://forum.simutrans.com/index.php?action=profile;u=8727"};
 	var src_lang =	[
@@ -38,7 +39,14 @@ module.exports =
 				];
 
 	//-----------------------------------------------------------------------------------------------------
-
+	//Videos --------------------------------------------------------------------------------------------
+	var video_list =	[
+							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false},
+							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false},
+							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false},
+							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : true},
+							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false}
+						]
 
 	//Servicios --------------------------------------------------------------------------------------------
 	var cat_list = {vis : "visita", agu : "agua", equ : "equipos", man : "mantenimiento", ele : "electrico"};
@@ -164,7 +172,24 @@ module.exports =
 		); 
 	});
 
-
+	app.get('/videos', function (req, res) {
+		res.render('videos',
+			{
+				domain : src_dom, desc : src_desc, motto : src_motto, title : src_title,
+				contact : src_contact, links : src_links, autor : src_autor, lang : src_lang,
+				social : src_social, address : src_address, video : video_list
+			}
+		); 
+	});
+	app.get('/player', function (req, res) {
+		res.render('player',
+			{
+				domain : src_dom, desc : src_desc, motto : src_motto, title : src_title,
+				contact : src_contact, links : src_links, autor : src_autor, lang : src_lang,
+				social : src_social, address : src_address, video : video_list
+			}
+		); 
+	});
 
   }
 }
