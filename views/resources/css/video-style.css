@@ -50,10 +50,10 @@ padding: 10px;
 
 .video-containerr {
  	float: left;
-	width: 400px;
+	width: 600px;
 	/*height: 50px;*/
 
-	margin-left: 2%;
+	margin-left: 10%;
 
   display: inline;
 
@@ -62,8 +62,8 @@ padding: 10px;
 
 
 video {
-	width: 400px;
-	height: 250px;
+	width: 600px;
+	height: 450px;
 	display: inline;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 }
@@ -78,13 +78,13 @@ video {
 @media all and (max-width:935px){
 
 	.video-containerr {
-		width: 400px;
-		margin-left: 2%;
+		width: 450px;
+		margin-left: 15%;
 	}
 
 	video {
-		width: 400px;
-		height: 250px;
+		width: 450px;
+		height: 280px;
 
 	}
 }
