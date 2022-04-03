@@ -17,7 +17,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #ff6329;;
 }
 .swiper {
   margin-left: auto;
@@ -207,6 +207,7 @@
   text-transform: none;
   font-variant: initial;
   line-height: 1;
+  font-weight: bold;
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
@@ -289,8 +290,8 @@
   transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
   display: inline-block;
   border-radius: 50%;
   background: var(--swiper-pagination-bullet-inactive-color, #000);
