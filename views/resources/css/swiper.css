@@ -7,16 +7,15 @@ h2{
 }
 
 a {
-	color: #c50000;
- 	text-shadow: 3px 3px 3px #f1beac;
+	color: #fff;
+ 	text-shadow: 2px 2px 2px #ff6329;
 	text-decoration: none;
 }
 
 .title {
-	background:linear-gradient(rgba(219,226,231,.8),rgba(219,226,231,.35));
-
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 	position: absolute;
-    top: 5%;
+    top: 20px;
     width: 100%;
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -153,10 +152,27 @@ a {
 @media all and (max-width:605px){
 	h2 {
 			font-size:10pt;
+
 	}
 	.title {
 
-		top: 10%;
+    top: 20px;
+		padding:10px;
 		height: auto;
+
+	}
+@media all and (max-width:460px){
+
+	h2 {
+			font-size:10pt;
+
+	}
+	.title {
+
+    top: 20px;
+		padding:10px;
+		height: auto;
+
+	}
 
 }
