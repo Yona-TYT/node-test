@@ -45,7 +45,7 @@ module.exports =
 							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false},
 							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false},
 							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : true},
-							{src : "video_1", text : "Desc Video", img : "poster_1.png", post : false}
+							{src : "video_2", text : "Stephen Bishop- Losing Myself In You (Bish, 1978)", img : "poster_1.png", post : false}
 						]
 
 	//Servicios --------------------------------------------------------------------------------------------

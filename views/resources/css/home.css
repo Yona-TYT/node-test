@@ -1,7 +1,7 @@
 
 .infotx h1 {
 	color: #2d74b2;
- 	text-shadow: 3px 3px 3px #f1beac;
+ 	text-shadow: var(--shadow-text);
 	text-align: center;
 }
 
@@ -30,6 +30,7 @@ p {
 .logo-bg{
 	background:url(/images/logo-bg.png);
 	background:linear-gradient(rgba(219,226,231,.7),rgba(219,226,231,0));
+	border-radius:10px 10px 0 0;
 	padding-bottom:20px
 }
 .logo img {
@@ -41,12 +42,13 @@ p {
 }
 .smsc{
 	background:50% no-repeat;
+	border-radius:10px 10px 0 0;
 	padding:10%;
 	height:0
 }
 .headline{
 	 font-size: var(--siz-h2);
-	text-shadow: 3px 3px 3px #f1beac;
+	text-shadow: var(--shadow-text);
 	color:var(--color-text-link);
 	margin-top:.5em
 }

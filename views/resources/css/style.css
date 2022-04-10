@@ -31,6 +31,8 @@
 	--siz-h2: 14pt;
 
 	--color-layer-a : rgba(31, 118, 233, 0.30);
+
+	--shadow-text: 2px 2px 2px #f1beac;
 }
 
 .style_hidden {
@@ -98,7 +100,7 @@ h1 {
 }
 p{
 	font-size: var(--siz-p);
-	text-shadow: 2px 2px 2px rgba(50, 0, 0, 0.20);;
+	text-shadow: 2px 2px 2px rgba(50, 0, 0, 0.20);
 }
 a {
 	text-decoration: none;
@@ -132,7 +134,7 @@ details summary:hover {
 }
 
 details[open] summary {
-    font-weight: 600; /* peso de la tipografía cuando está desplegado */
+    /*font-weight: 600; /* peso de la tipografía cuando está desplegado */
 }
 
 /* Header */
