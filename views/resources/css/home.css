@@ -150,8 +150,9 @@ p {
  color:  var(--color-conta-a-hov);
 }
 #sectlist span{
-	width:15px;
-	padding:0.2%;
+	width:14pt;
+	/*padding:5px;*/
+	margin: 0px auto;
 	border-radius:5px;
 	color:#fff;
 	background: #07fe46;
